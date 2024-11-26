@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<FlatSharpSchema Include="Basics.fbs" />
+		<FlatSharpSchema Include="TestSchema.fbs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="FlatSharp">
+	    <HintPath>bin\Debug\net8.0-windows\FlatSharp.dll</HintPath>
+	  </Reference>
+	  <Reference Include="FlatSharp.Runtime">
+	    <HintPath>bin\Debug\net8.0-windows\FlatSharp.Runtime.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+</Project>

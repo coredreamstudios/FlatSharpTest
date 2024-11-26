@@ -1,0 +1,20 @@
+﻿// all FlatSharp FBS attributes start with the 'fs_' prefix.
+attribute "fs_serializer";
+
+namespace FlatSharpTest;
+
+enum Color : ubyte { Red = 1, Green, Blue }
+
+table Person (fs_serializer) {
+    id : int;
+    name : string;
+    parent : Person (deprecated);
+    children : [ Person ];
+    favorite_color : Color = Blue;
+    position : Location;
+}
+
+struct Location {
+    latitude : float;
+    longitude : float;
+}
