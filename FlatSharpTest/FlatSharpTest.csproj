@@ -10,7 +10,6 @@
 
 	<ItemGroup>
 		<FlatSharpSchema Include="Basics.fbs" />
-		<FlatSharpSchema Include="TestSchema.fbs" />
 	</ItemGroup>
 
 	<ItemGroup>
