@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             button1 = new Button();
+            lblHola = new Label();
             SuspendLayout();
             // 
             // button1
@@ -36,26 +37,38 @@
             button1.Font = new Font("Segoe UI", 24F);
             button1.Location = new Point(12, 12);
             button1.Name = "button1";
-            button1.Size = new Size(329, 182);
+            button1.Size = new Size(329, 150);
             button1.TabIndex = 0;
             button1.Text = "RUN ME";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
+            // 
+            // lblHola
+            // 
+            lblHola.AutoSize = true;
+            lblHola.Location = new Point(137, 165);
+            lblHola.Name = "lblHola";
+            lblHola.Size = new Size(38, 15);
+            lblHola.TabIndex = 1;
+            lblHola.Text = "label1";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(354, 206);
+            Controls.Add(lblHola);
             Controls.Add(button1);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FlatBuffer Test";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button button1;
+        private Label lblHola;
     }
 }

@@ -1,7 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-namespace FlatSharpTest;
-
 // Simple assertions
 public static class Assert
 {

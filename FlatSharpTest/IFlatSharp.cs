@@ -1,6 +1,4 @@
-﻿namespace FlatSharpTest;
-
-public interface IFlatSharp
+﻿public interface IFlatSharp
 {
     void Run();
 }
