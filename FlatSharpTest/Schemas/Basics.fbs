@@ -21,4 +21,4 @@ struct Location {
 
 
 root_type Person;
-file_identifier "PRSN";
+file_identifier "TEST";
