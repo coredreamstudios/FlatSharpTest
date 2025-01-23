@@ -19,6 +19,5 @@ struct Location {
     longitude : float;
 }
 
-
 root_type Person;
-file_identifier "TEST";
+file_identifier "PRSN";
