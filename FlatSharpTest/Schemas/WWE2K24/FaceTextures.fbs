@@ -1,0 +1,17 @@
+﻿// all FlatSharp FBS attributes start with the 'fs_' prefix.
+attribute "fs_serializer";
+
+namespace FlatSharpTest.WWE2K24;
+
+table FaceTexturesRootObject {
+  FaceTextures:[FaceTexture];
+}
+
+table FaceTexture (fs_serializer) {
+    id : int;
+    attire : int;
+    path : string;
+}
+
+root_type FaceTexturesRootObject;
+file_identifier "Play";

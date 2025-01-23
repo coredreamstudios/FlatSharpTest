@@ -10,6 +10,8 @@
 
 	<ItemGroup>
 		<FlatSharpSchema Include="Schemas/Basics.fbs" />
+		<FlatSharpSchema Include="Schemas/WWE2K24/CharacterMapping.fbs" />
+		<FlatSharpSchema Include="Schemas/WWE2K24/FaceTextures.fbs" />
 	</ItemGroup>
 
 	<ItemGroup>

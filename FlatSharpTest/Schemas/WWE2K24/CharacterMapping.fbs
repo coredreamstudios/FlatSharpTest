@@ -1,0 +1,22 @@
+﻿// all FlatSharp FBS attributes start with the 'fs_' prefix.
+attribute "fs_serializer";
+
+namespace FlatSharpTest.WWE2K24;
+
+table CharacterMappingRootObject {
+  CharacterMappings:[CharacterMapping];
+}
+
+table CharacterMapping {
+  characterid:uint;
+  characterfolderpath:string;
+  attirefolderpath:string;
+  basemodelmdlpath:string;
+  basemodelmtlspath:string;
+  attiremdlpath:string;
+  attiremtlspath:string;
+  locked:bool;
+}
+
+root_type CharacterMappingRootObject;
+file_identifier "Char";
